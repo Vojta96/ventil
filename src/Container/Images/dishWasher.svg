@@ -1,0 +1,25 @@
+
+SVGOMG
+Powered by SVGO v2.6.1
+
+Open SVG
+Paste markup
+Demo
+Contribute
+About
+
+3.53k → 881 bytes 24.37%
+<svg xmlns="http://www.w3.org/2000/svg" width="188.981" height="188.973" viewBox="0 0 50.001 49.999">
+  <defs>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h1181v1181H0V0"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="matrix(0 -.1071 -.1194 0 95.483 88.167)" stroke-width="2.34" stroke="#dbdbdb" stroke-miterlimit="10">
+    <path d="M727 384v412L359 384Zm0 412L359 384v412z" fill="#dbdbdb"/>
+    <path d="M359 796V384h368v412H359" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M821 384v286l-15-286Zm0 286-15-286v286zm-15-286v141l-1-141zm0 141-1-141v141zm-1-141v54l-1-54zm0 54-1-54v51zm0 4v83l-1-79zm0 83-1-79v79zm-1-141v51l-1-51zm0 51-1-51v48zm0 11v79l-1-76zm0 79-1-76v76zm-1-141v48l-2-48zm0 48-2-48v44zm0 17v76l-2-73zm0 76-2-73v73zm-2-141v44l-2-44zm0 44-2-44v42zm0 24v73l-2-70zm0 73-2-70v70zm-2-141v42l-3-42zm0 42-3-42v40zm0 29v70l-3-68zm0 70-3-68v68zm-3-141v40l-3-40zm0 40-3-40v38zm0 33v68l-3-66zm0 68-3-66v66zm-3-66v66l-2-66zm0 66-2-66v66zm13 57v11l-15-11zm0 11-15-11v11zm0 57v20l-15-20zm0 20-15-20v20zm-13-286v38l-4-38zm0 38-4-38v37zm-2 37v211l-2-210zm0 211-2-210v210zm-2-286v37l-3-37zm0 37-3-37v37zm0 39v210l-3-210zm0 210-3-210v210zm-3-286v37l-4-37zm0 37-4-37v37zm0 39v210l-4-210zm0 210-4-210v210zm-4-286v37l-4-37zm0 37-4-37v38zm0 39v210l-4-211zm0 210-4-211v211zm-4-286v38l-3-38zm0 38-3-38v40zm0 37v211l-3-213zm0 211-3-213v213zm-3-286v40l-3-40zm0 40-3-40v42zm0 33v213l-3-215zm0 213-3-215v215zm-3-286v42l-2-42zm0 42-2-42v44zm0 29v215l-2-218zm0 215-2-218v218zm-2-286v44l-2-44zm0 44-2-44v48zm0 24v218l-2-221zm0 218-2-221v221zm-2-286v48l-1-48zm0 48-1-48v51zm0 17v221l-1-224zm0 221-1-224v224zm-1-286v51l-1-51zm0 51-1-51v54zm0 11v224l-1-228zm0 224-1-228v228zm-1-286v286l-19-286Zm0 286-19-286v286zm55 20v106l-74-106Zm0 106-74-106v106z" fill="#dbdbdb" stroke-linecap="round"/>
+    <path d="M747 796V690h74v106h-74m0-126V384h74v286h-74" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M806 650v-57h-15v57h15m0-68v-57h-15v57h15m-19.5-161c10.77 0 19.5 8.73 19.5 19.5s-8.73 19.5-19.5 19.5-19.5-8.73-19.5-19.5 8.73-19.5 19.5-19.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+import React, { useState } from 'react'
+import EquipmentList from './EquipmentList'
+import "./EquipmentList.css"
+// podle ČSN 75 5455
+
+const SaniDimensions = () => {
+  
+    return (
+      <EquipmentList
+          equipmentList={equipments}
+      />
+    );
+}
+
+export default SaniDimensions

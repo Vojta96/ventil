@@ -1,0 +1,47 @@
+
+SVGOMG
+Powered by SVGO v2.6.1
+
+Open SVG
+Paste markup
+Demo
+Contribute
+About
+
+5.26k → 1.67k 31.73%
+<svg xmlns="http://www.w3.org/2000/svg" width="189.019" height="189.028" viewBox="0 0 50.011 50.014">
+  <defs>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h1181v1181H0V0"/>
+    </clipPath>
+    <clipPath id="b" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0h1181v1181H0V0"/>
+    </clipPath>
+  </defs>
+  <g stroke-width=".731">
+    <g clip-path="url(#a)" transform="matrix(0 -.05337 -.06285 0 66.587 59.282)">
+      <text style="-inkscape-font-specification:ArialMT" transform="matrix(0 -1 -1 0 1012 1070)" font-weight="400" font-size="137.487" font-family="Arial" fill="#dbdbdb">
+            <tspan y="0" x="0 99.265617 198.53123 236.75261 313.19537">DN 20</tspan>
+          </text>
+    </g>
+    <g clip-path="url(#b)" stroke="#dbdbdb" stroke-width="4.568" stroke-miterlimit="10" transform="matrix(0 -.05337 -.06285 0 66.587 59.282)">
+      <path d="M409 925v-23l378 23zm0-23 378 23v-23zm38-5v-14l302 14zm0-14 302 14v-14zm269-239-2-20v41zm-2-20v41l-5-61zm0 41-5-61v81zm-5-61v81l-9-100zm0 81-9-100v119zm-9-100v119l-12-136Zm0 119-12-136v153zm-12-136v153l-15-167Zm0 153-15-167v181zm-15-256v401l-1-425zm0 401-1-425v425zm-1-425v425l-5-448zm0 425-5-448v448zm-5-448v448l-8-470zm0 448-8-470v470zm-8-470v470l-12-490Zm0 470-12-490v490zm-12-490v490l-14-509Zm0 490-14-509v509zm-14-509v509l-17-526Zm0 509-17-526v526zm-17-526v526l-18-540Zm0 526-18-540v540zm-18-540v540l-21-551Zm0 540-21-551v551zm-21-551v551l-22-560Zm0 551-22-560v560zm-22-560v560l-23-565Zm0 560-23-565v565zm-23-565v565l-10-565Zm0 565-10-565v565zm-10-565v197zm0 197V301v189Zm0-197v189l-3-190zm0 189-3-190v182zm-3-190v182l-3-182zm0 182-3-182v174zm-3-182v174l-5-174zm0 174-5-174v168zm-5-174v168l-3-168zm0 168-3-168v164zm11 86v181l-14-167Zm0 181-14-167v153zm-14-435v164l-3-164zm0 164-3-164v162zm-3-164v162l-6-162zm0 162-6-162v157zm3 106v153l-12-136Zm0 153-12-136v119zm-9-421v157l-8-157zm0 157-8-157v154zm-3 128v119l-9-100zm0 119-9-100v81zm-5-404v154l-8-154zm0 154-8-154v151zm-4 231-5-20v-41zm-5-20v-41l-2 20z" fill="#dbdbdb"/>
+      <path d="M487 685v-81l-5 20zm-4-385v151l-8-151zm0 151-8-151v151zm-8-151v151l-99-151Zm0 151-99-151v151z" fill="#dbdbdb"/>
+      <path d="M673 554v-89M508.5 300c91.403 0 165.5 74.097 165.5 165.5M508 300H376v151h99m.5 0c26.234 0 47.5 21.266 47.5 47.5m-1-.5v56m0 181v131" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M522 868v-3l151 3zm0-3 151 3v-3z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M673 866V735" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M365 484h-7l7-218zm-7 0 7-218h-7z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M674.341 553.448a118.5 118.5 0 0 1 0 182.104m-151.682 0a118.5 118.5 0 0 1 0-182.104" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M730 652v-15l132 15zm0-15 132 15v-15z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M841 727h-14l14-165zm-14 0 14-165h-14zm21-167v3-5zm0 3v-5 8zm0-5v8l-1-11zm0 8-1-11v13zm-1-11v13l-2-15zm0 13-2-15v17zm-2-15v17l-1-19zm0 17-1-19v21zm-1-19v21l-2-22zm0 21-2-22v24z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M842 550v24l-3-25zm0 24-3-25v26zm-3-25v26l-2-27zm0 26-2-27v28zm-2-27v28l-3-28zm0 28-3-28v28zm-3-28v28l-3-28zm0 28-3-28v28zm-3-28v28l-2-27zm0 28-2-27v26zm-2-27v26l-2-25zm0 26-2-25v24zm-2-25v24l-2-23zm0 24-2-23v21zm-2-23v21l-2-19zm0 21-2-19v17zm-2-19v17l-2-15zm0 17-2-15v13zm-2-15v13l-1-10zm0 13-1-10v8zm-1-10v8-6zm0 8v-6 3z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M834.5 548c8.008 0 14.5 6.492 14.5 14.5s-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5 6.492-14.5 14.5-14.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M848 726v2-5zm0 2v-5 8zm0-5v8l-1-10zm0 8-1-10v12zm-1-10v12l-2-14zm0 12-2-14v17zm-2-14v17l-1-19zm0 17-1-19v21zm-1-19v21l-2-23zm0 21-2-23v24zm-2-23v24l-3-25zm0 24-3-25v26zm-3-25v26l-2-27zm0 26-2-27v28zm-2-27v28l-3-28zm0 28-3-28v28zm-3-28v28l-3-28zm0 28-3-28v28zm-3-28v28l-2-27zm0 28-2-27v26zm-2-27v26l-2-25zm0 26-2-25v24zm-2-25v24l-2-22zm0 24-2-22v21zm-2-22v21l-2-19zm0 21-2-19v17zm-2-19v17l-2-15zm0 17-2-15v12zm-2-15v12l-1-10zm0 12-1-10v8zm-1-10v8-5zm0 8v-5 2z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M834.5 713c8.008 0 14.5 6.492 14.5 14.5s-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5 6.492-14.5 14.5-14.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="m314 375-34-15v31zm-34-15v31l-35-56zm0 31-35-56v80zm-35-56v80l-8-84zm0 80-8-84v88zm-8-84v88l-9-90zm0 88-9-90v92zm-9-90v92l-8-92zm0 92-8-92v92zm-8-92v92l-9-91zm0 92-9-91v90zm-9-91v90l-8-87zm0 90-8-87v84zm-8-87v84l-8-80zm0 84-8-80v76zm-8-80v76l-7-70zm0 76-7-70v64zm-7-70v64l-5-57zm0 64-5-57v50zm-5-57v50l-4-42zm0 50-4-42v34zm-4-8-3-8v-18zm-3-8v-18 9z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="M179 392v-34l-3 8z" fill="#dbdbdb" stroke-linecap="round"/>
+      <path d="m280 360 34 15-34 16-35 24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M245.749 415.77c-19.543 11.283-44.366 6.906-58.87-10.38-14.505-17.287-14.505-42.493 0-59.78 14.504-17.286 39.327-21.663 58.87-10.38M245 335l35 25" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
