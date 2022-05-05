@@ -1,46 +1,50 @@
-import React, { useEffect } from "react";
-import NewRoom from '../HeatLoss/NewRoom';
-import "./HeatCalc.css"
+import React from "react";
+import Constructions from "./Constructions/Constructions";
+import HeatLoss from "./HeatLoss";
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Paper from "@material-ui/core/Paper";
+import SwipeableViews from 'react-swipeable-views';
 
-const HeatCalc = props => {
-    const rooms = [
-        {
-            Number: "-101-",
-            Temperature: "20 °C",
-            HeatLoss: "300 W",
-        },
-    ];
-
-    const onAddedRoom = (event) => {
-        rooms.push(event)
-        console.log(rooms)
-    }
-
-    const RoomMap = () => {
-        return (
-            rooms.map(room => {
-                return (
-                    <div key={room.Number} className='Room'>
-                        {room.Number}<br />
-                        {room.Temperature}<br />
-                        {room.HeatLoss}<br />
-                    </div>
-                )
-            })
-        )
-
-    }
+const NewConstructions = props => {
+    const [value, setValue] = React.useState(0);
 
     return (
-        <div className="App-header">
-            <div className='Room--box'>
-                {RoomMap()}
-                <div className='addRoom'>+</div>
-            </div>
-            <NewRoom onAddedRoom={onAddedRoom} />
-        </div>
+        <>
+            <Paper>
+                <Tabs
+                    variant="fullWidth"
+                    value={value}
+                    indicatorColor="primary"
+                    textColor="primary"
+                    onChange={(e, v) => {
+                        setValue(v);
+                    }}
+                    aria-label="disabled tabs example"
+                >
+                    <Tab label="Konstrukce" />
+                    <Tab label="Tepelná ztráta" />
+                </Tabs>
+            </Paper>
+            <SwipeableViews
+                index={value}
+                onChangeIndex={(i) => setValue(i)}
+                style={{ height: '100vh' }}
+            >
+                <div
+                    hidden={value !== 0}
+                >
+                    <Constructions />
+                </div>
+                <div
+                    hidden={value !== 1}
+                >
+                    <HeatLoss />
+                </div>
+            </SwipeableViews>
+        </>
     )
 
 };
 
-export default HeatCalc;
+export default NewConstructions;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Card from '../../UI/Card';
-import Input from '../../UI/Input';
-import Button from '../../UI/Button';
+import Card from '../../../UI/Card';
+import Input from '../../../UI/Input';
+import Button from '../../../UI/Button';
 
-const NewRoom = props => {
+const NewConstruction = props => {
     const [enteredNumber, setEnteredNumber] = useState("")
     const [enteredTemperature, setEnteredTemperature] = useState("")
     const [enteredArea, setEnteredArea] = useState("")
@@ -46,4 +46,4 @@ const NewRoom = props => {
     )
 }
 
-export default NewRoom
+export default NewConstruction;
