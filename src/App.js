@@ -45,7 +45,7 @@ function App() {
       <h1 className="header" onClick={showHome}>
         VENTIL
       </h1>
-      {/* {home === 1 &&
+      {home === 1 &&
         <Card>
           <div className="start__tiles" onClick={showAir}>AirCalc</div>
           <div className="start__tiles" onClick={showSani}>SaniCalc</div>
@@ -54,8 +54,7 @@ function App() {
       }
       {air === 1 && <AirCalc />}
       {sani === 1 && <SaniCalc />}
-      {heat === 1 && <HeatCalc />} */}
-      <HeatCalc />
+      {heat === 1 && <HeatCalc />}
     </div>
   );
 }
