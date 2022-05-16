@@ -9,9 +9,9 @@ const NewConstruction = props => {
     const [enteredArea, setEnteredArea] = useState("")
     const [enteredHeight, setEnteredHeight] = useState("")
 
-    const addRoom = () => {
-        props.onAddedRoom(enteredNumber, enteredTemperature)
-        props.closeNewRoom()
+    const addConstruction = () => {
+        props.onAddedConstruction(enteredNumber, enteredTemperature)
+        props.NewConstructionHandler()
     }
 
     const numberChanger = (event) => {
@@ -32,16 +32,16 @@ const NewConstruction = props => {
 
     return (
         <>
-            <div className="NewRoom__form">
+            <div className="NewConstruction__form">
                 <Card className="card">
-                    <Input type="text" label="Číslo místnosti" value={enteredNumber} onChange={numberChanger} />
-                    <Input type="text" label="Teplota" onChange={temperatureChanger} />
+                    <Input type="text" label="Název konstrukce" value={enteredNumber} onChange={numberChanger} />
+                    <Input type="text" label="Zkratka" onChange={temperatureChanger} />
                     <Input type="text" label="Plocha místnosti" onChange={areaChanger} />
                     <Input type="text" label="Konstrukční výška" onChange={heightChanger} />
-                    <Button onClick={addRoom} >ok</Button>
+                    <Button onClick={addConstruction} >ok</Button>
                 </Card>
             </div>
-            <div className="backdrop" onClick={props.closeNewRoom} />
+            <div className="backdrop" onClick={props.NewConstructionHandler} />
         </>
     )
 }

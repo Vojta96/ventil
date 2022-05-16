@@ -2,42 +2,43 @@ import React, { useState } from "react";
 import ConstructionList from "./ConstructionList"
 import NewConstruction from "./NewConstruction"
 import "./../HeatCalc.css"
+import "./Constructions.css"
 
 const Constructions = props => {
-    const [rooms, setRooms] = useState([]);
-    const [showNewRoom, setShowNewRoom] = useState(0)
+    const [constructions, setConstructions] = useState([]);
+    const [showNewConstruction, setShowNewConstruction] = useState(0)
 
-    const onAddedRoom = (eNumber, eTemperature) => {
-        setRooms((prev) => {
+    const onAddedConstruction = (eName, eDepth, eLambda, eRsi, eRse) => {
+        setConstructions((prev) => {
             return [...prev, {
-                Number: eNumber,
-                Temperature: eTemperature,
-                HeatLoss: "---"
+                Name: eName,
+                Depth: eDepth,
+                Lambda: eLambda,
+                Rsi: eRsi,
+                Rse: eRse,
             }]
         })
-    }
+    };
 
-    const openNewRoom = () => {
-        setShowNewRoom(1)
-        console.log(showNewRoom)
-    }
-
-    const closeNewRoom = () => {
-        setShowNewRoom(0)
-    }
+    const NewConstructionHandler = () => {
+        setShowNewConstruction((prev) => {
+            return (!prev)
+        })
+    };
 
     return (
         <div className="App-header">
-            <ConstructionList rooms={rooms} openNewRoom={openNewRoom}
+            <ConstructionList
+                constructions={constructions}
+                NewConstructionHandler={NewConstructionHandler}
             />
-            {showNewRoom == 1 &&
+            {showNewConstruction == 1 &&
                 <NewConstruction
-                    onAddedRoom={onAddedRoom}
-                    closeNewRoom={closeNewRoom}
+                    onAddedConstruction={onAddedConstruction}
+                    NewConstructionHandler={NewConstructionHandler}
                 />}
         </div>
     )
-
 };
 
 export default Constructions;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from '../../UI/Card';
 import Input from '../../UI/Input';
 import Button from '../../UI/Button';
+import "./HeatCalc.css"
 
 const NewRoom = props => {
     const [enteredNumber, setEnteredNumber] = useState("")
@@ -11,7 +12,7 @@ const NewRoom = props => {
 
     const addRoom = () => {
         props.onAddedRoom(enteredNumber, enteredTemperature)
-        props.closeNewRoom()
+        props.NewRoomHandler()
     }
 
     const numberChanger = (event) => {
@@ -32,6 +33,8 @@ const NewRoom = props => {
 
     return (
         <>
+            <div className="backdrop" onClick={props.NewRoomHandler} />
+
             <div className="NewRoom__form">
                 <Card className="card">
                     <Input type="text" label="Číslo místnosti" value={enteredNumber} onChange={numberChanger} />
@@ -41,7 +44,6 @@ const NewRoom = props => {
                     <Button onClick={addRoom} >ok</Button>
                 </Card>
             </div>
-            <div className="backdrop" onClick={props.closeNewRoom} />
         </>
     )
 }

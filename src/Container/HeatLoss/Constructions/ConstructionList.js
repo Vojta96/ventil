@@ -2,15 +2,15 @@ import React from "react";
 
 const ConstructionList = (props) => {
     return (
-        <div className='Room--box'>
-            {props.rooms.map((room) => (
-                <div key={room.Number} className='Room'>
-                    -{room.Number}-<br />
-                    {room.Temperature} °C<br />
-                    {room.HeatLoss} W<br />
+        <div className='Construction--box'>
+            {props.constructions.map((construction) => (
+                <div key={props.constructions.length} className='Construction'>
+                    -{construction.Number}-<br />
+                    {construction.Temperature} °C<br />
+                    {construction.HeatLoss} W<br />
                 </div>)
             )}
-            <div className='addRoom' onClick={props.openNewRoom}>+</div>
+            <div className='addConstruction' onClick={props.NewConstructionHandler}>+</div>
         </div>
     )
 };

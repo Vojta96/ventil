@@ -10,7 +10,7 @@ const RoomList = (props) => {
                     {room.HeatLoss} W<br />
                 </div>)
             )}
-            <div className='addRoom' onClick={props.openNewRoom}>+</div>
+            <div className='addRoom' onClick={props.NewRoomHandler}>+</div>
         </div>
     )
 };

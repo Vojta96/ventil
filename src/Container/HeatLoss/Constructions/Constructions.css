@@ -1,10 +1,10 @@
-.Room--box {
+.Construction--box {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.Room {
+.Construction {
     width: 100px;
     height: 100px;
     border: solid 2px;
@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.addRoom {
+.addConstruction {
     width: 100px;
     height: 100px;
     border: dashed 2px;
@@ -50,7 +50,7 @@
     background: rgba(0, 0, 0, 0.75);
 }
 
-.NewRoom__form {
+.NewConstruction__form {
     position: absolute;
     top: 20%;
     display: flex;

@@ -17,23 +17,20 @@ const HeatCalc = props => {
         })
     }
 
-    const openNewRoom = () => {
-        setShowNewRoom(1)
-        console.log(showNewRoom)
-    }
-
-    const closeNewRoom = () => {
-        setShowNewRoom(0)
-    }
+    const NewRoomHandler = () => {
+        setShowNewRoom((prev) => {
+            return (!prev)
+        })
+    };
 
     return (
         <div className="App-header">
-            <RoomList rooms={rooms} openNewRoom={openNewRoom}
+            <RoomList rooms={rooms} NewRoomHandler={NewRoomHandler}
             />
             {showNewRoom == 1 &&
                 <NewRoom
                     onAddedRoom={onAddedRoom}
-                    closeNewRoom={closeNewRoom}
+                    NewRoomHandler={NewRoomHandler}
                 />}
         </div>
     )
