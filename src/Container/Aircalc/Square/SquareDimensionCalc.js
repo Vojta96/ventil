@@ -40,7 +40,7 @@ const SquareDimensionCalc = () => {
     };
 
     return (
-        <Card className="air__form--box">
+        <div className="air__form--box">
             <div className="air__input--box">
                 <text>Průtok</text>
                 <input className="air__input"
@@ -75,7 +75,7 @@ const SquareDimensionCalc = () => {
                     {lowerDimension(19)}{lowerDimension(18)}{lowerDimension(17)}{lowerDimension(16)}{lowerDimension(15)}{lowerDimension(14)}{lowerDimension(13)}{lowerDimension(12)}{lowerDimension(11)}{lowerDimension(10)}{lowerDimension(9)}{lowerDimension(8)}{lowerDimension(7)}{lowerDimension(6)}{lowerDimension(5)}{lowerDimension(4)}{lowerDimension(3)}{lowerDimension(2)}{lowerDimension(1)}{lowerDimension(0)}
                 </div>
             </div>
-        </Card>
+        </div>
     )
 }
 
