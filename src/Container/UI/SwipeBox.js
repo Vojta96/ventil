@@ -5,23 +5,16 @@ import "./SwipeBox.css"
 function SwipeBox(props) {
     return (
         <div className='container'>
-            <div className='slot' onClick={props.props1OnClick}>{props.slot1}</div>
-            <div className='slot'>{props.slot2}</div>
-            <div className='slot'>{props.slot3}</div>
-            <div className='slot'>{props.slot4}</div>
-            <div className='slot'>{props.slot5}</div>
-            <div className='slot'>{props.slot6}</div>
-            <div className='slot'>{props.slot7}</div>
-            <div className='slot'>{props.slot8}</div>
-            <div className='slot'>{props.slot9}</div>
-            <div className='slot'>{props.slot10}</div>
-            <div className='slot'>{props.slot11}</div>
-            <div className='slot'>{props.slot12}</div>
-            <div className='slot'>{props.slot13}</div>
-            <div className='slot'>{props.slot14}</div>
-            <div className='slot'>{props.slot21}</div>
-            <div className='slot'>{props.slot22}</div>
-            <div className='slot'>{props.slot23}</div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot1}</div><div>{props.image1}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot2}</div><div>{props.image2}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot3}</div><div>{props.image3}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot4}</div><div>{props.image4}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot5}</div><div>{props.image5}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot6}</div><div>{props.image6}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot7}</div><div>{props.image7}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot8}</div><div>{props.image8}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot9}</div><div>{props.image9}</div></div>
+            <div className='slot' onClick={props.props1OnClick}><div className='tile__text'>{props.slot10}</div><div>{props.image10}</div></div>
         </div>)
 
 };

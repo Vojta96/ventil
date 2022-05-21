@@ -39,9 +39,8 @@
   position: relative;
   object-fit: cover;
   cursor: pointer;
-  width: 90px;
-  height: 90px;
-  margin: 5px;
+  width: 100px;
+  height: 100px;
 }
 
 .equipment__count {
