@@ -4,40 +4,34 @@ import Input from '../../../UI/Input';
 import Button from '../../../UI/Button';
 
 const NewConstruction = props => {
-    const [enteredNumber, setEnteredNumber] = useState("")
-    const [enteredTemperature, setEnteredTemperature] = useState("")
-    const [enteredArea, setEnteredArea] = useState("")
-    const [enteredHeight, setEnteredHeight] = useState("")
+    const [enteredName, setEnteredName] = useState("")
+    const [enteredShortName, setEnteredShortName] = useState("")
+    const [enteredHeatTransfer, setEnteredHeatTransfer] = useState("")
 
     const addConstruction = () => {
-        props.onAddedConstruction(enteredNumber, enteredTemperature)
+        props.onAddedConstruction(enteredName, enteredShortName, enteredHeatTransfer)
         props.NewConstructionHandler()
     }
 
-    const numberChanger = (event) => {
-        setEnteredNumber(event.target.value)
+    const nameChanger = (event) => {
+        setEnteredName(event.target.value)
     }
 
-    const temperatureChanger = (event) => {
-        setEnteredTemperature(event.target.value)
+    const shortNameChanger = (event) => {
+        setEnteredShortName(event.target.value)
     }
 
-    const areaChanger = (event) => {
-        setEnteredArea(event.target.value)
-    }
-
-    const heightChanger = (event) => {
-        setEnteredHeight(event.target.value)
+    const heatTransferChanger = (event) => {
+        setEnteredHeatTransfer(event.target.value)
     }
 
     return (
         <>
             <div className="NewConstruction__form">
                 <Card className="card">
-                    <Input type="text" label="Název konstrukce" value={enteredNumber} onChange={numberChanger} />
-                    <Input type="text" label="Zkratka" onChange={temperatureChanger} />
-                    <Input type="text" label="Plocha místnosti" onChange={areaChanger} />
-                    <Input type="text" label="Konstrukční výška" onChange={heightChanger} />
+                    <Input type="text" label="Název konstrukce" value={enteredName} onChange={nameChanger} />
+                    <Input type="text" label="Zkratka konstrukce" onChange={shortNameChanger} />
+                    <Input type="text" label="Součinitel prostupu tepla" onChange={heatTransferChanger} />
                     <Button onClick={addConstruction} >ok</Button>
                 </Card>
             </div>

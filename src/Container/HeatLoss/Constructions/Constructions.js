@@ -5,17 +5,19 @@ import "./../HeatCalc.css"
 import "./Constructions.css"
 
 const Constructions = props => {
-    const [constructions, setConstructions] = useState([]);
+    const [constructions, setConstructions] = useState([{
+        Name: "Obvodová konstrukce",
+        ShortName: "SO1",
+        HeatTransfer: "0,2 W/m.K",
+    }]);
     const [showNewConstruction, setShowNewConstruction] = useState(0)
 
-    const onAddedConstruction = (eName, eDepth, eLambda, eRsi, eRse) => {
+    const onAddedConstruction = (eName, eShortName, eHeatTransfer) => {
         setConstructions((prev) => {
             return [...prev, {
                 Name: eName,
-                Depth: eDepth,
-                Lambda: eLambda,
-                Rsi: eRsi,
-                Rse: eRse,
+                ShortName: eShortName,
+                HeatTransfer: eHeatTransfer,
             }]
         })
     };

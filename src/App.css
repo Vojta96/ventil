@@ -6,7 +6,7 @@
 .App {
   background-color: #0A0A0A;
   color: white;
-  height: 100vh;
+  height: 10000px;
 }
 
 .header {
@@ -29,6 +29,9 @@
 }
 
 .tile__img {
+  width: 150px;
+  height: 150px;
+  background-color: #01253D;
   position: relative;
   object-fit: cover;
   cursor: pointer;
