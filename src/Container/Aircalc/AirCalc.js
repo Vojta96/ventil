@@ -55,7 +55,7 @@ const AirCalc = () => {
             <SwipeableViews
                 index={value}
                 onChangeIndex={(i) => setValue(i)}
-                style={{ height: '100vh' }}
+                style={{ height: '90vh' }}
             >
                 <div
                     hidden={value !== 0}

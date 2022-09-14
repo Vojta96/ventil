@@ -4,38 +4,36 @@
 }
 
 .App {
-  background-color: #0A0A0A;
-  color: white;
-  height: 10000px;
+  background: whitesmoke;
+  height: 100vh;
 }
 
 .header {
   width: 100%;
   padding: 8px 16px;
   font-size: 28px;
-  background: #01253D;
-  color: #E0AC00;
+  background: black;
+  color: white;
   margin: 0%;
   cursor: pointer;
 }
 
 .start__tiles {
-  color: #C5E7E2;
+  max-width: 20rem;
+  min-height: 3rem;
+  margin: 3rem;
   cursor: pointer;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   padding: 10px;
   padding-bottom: 0px;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 .tile__img {
-  width: 150px;
-  height: 150px;
-  background-color: #01253D;
   position: relative;
   object-fit: cover;
   cursor: pointer;
   border-radius: 5px;
-  width: 28vw;
-  height: 20vh;
 }

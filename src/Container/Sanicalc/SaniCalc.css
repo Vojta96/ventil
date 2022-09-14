@@ -1,25 +1,23 @@
 .equipment__box {
   display: inline-block;
-  background-color: rgb(59, 59, 59);
+  background-color: #3535358f;
   border: 2px solid;
   border-radius: 10px;
   position: relative;
-  margin: 10px;
+  margin: 0.5rem;
 }
 
 .equipmentList {
   margin: auto;
-  margin-top: 10px;
-  width: 80%;
   text-align: center;
 }
 
 .equipment__box button {
   width: 90%;
-  height: 30px;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 6px;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0.5rem;
   border-radius: 10px;
   display: inline-block;
   z-index: 50;
@@ -39,19 +37,19 @@
   position: relative;
   object-fit: cover;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
 }
 
 .equipment__count {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 30px;
+  left: 4rem;
+  right: 0rem;
+  bottom: 3.7rem;
   z-index: 100;
   vertical-align: middle;
-  font-size: 40px;
-  color: rgb(42, 161, 127);
+  font-size: 2.8rem;
+  color: #01253D;
   cursor: pointer;
 }
 
@@ -59,26 +57,63 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 60px;
+  top: 40%;
   z-index: 100;
-  font-size: 22px;
-  color: rgb(42, 161, 127);
+  font-size: 1.5rem;
+  color: #01253D;
   cursor: pointer;
 }
 
 .sani__input--box {
   width: 70%;
   border: 0ch;
-  padding: 10px 25px;
+  padding: 1rem 2rem;
   margin: auto;
   text-align: center;
 }
 
 .sani__input {
   border: 0px;
-  font-size: 26px;
+  font-size: 2rem;
   width: 35%;
-  margin: 0px 50px;
+  margin: 0px 4rem;
   display: inline-block;
 
+}
+
+.sani__result--box {
+  width: fit-content;
+
+  display: block;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.sani__result--box h3 {
+  margin: 1rem 0;
+}
+
+.sani__result {
+  width: 40%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 5%;
+  padding: auto;
+}
+
+.sani__result h4 {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+}
+
+.sani__dimension--text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 40rem) {
+  .sani__form--box {
+    width: 40rem;
+    margin: auto;
+  }
 }

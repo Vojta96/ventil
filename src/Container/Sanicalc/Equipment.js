@@ -2,17 +2,27 @@ import React, { useState, useEffect } from 'react'
 import "../../App.css"
 
 const Equipment = ({ equipment, onNewCount }) => {
-  const [count, setCount] = useState(equipment.count)
-  const source = { count: count }
+  const [coldCount, setColdCount] = useState(equipment.coldCount)
+  const [hotCount, setHotCount] = useState(equipment.hotCount)
+  const source = {
+    coldCount: coldCount,
+    hotCount: hotCount
+  }
 
   const countPlus = () => {
-    setCount((prevState) => {
+    setColdCount((prevState) => {
+      return (prevState + 1)
+    })
+    equipment.isHot && setHotCount((prevState) => {
       return (prevState + 1)
     })
   };
 
   const countMinus = () => {
-    setCount((prevState) => {
+    setColdCount((prevState) => {
+      return (prevState - 1)
+    })
+    equipment.isHot && setHotCount((prevState) => {
       return (prevState - 1)
     })
   };
@@ -20,7 +30,7 @@ const Equipment = ({ equipment, onNewCount }) => {
   useEffect(() => {
     const changedEquipments = Object.assign(equipment, source);
     onNewCount(changedEquipments)
-  }, [count])
+  }, [equipment, source])
 
   return (
     <div className="equipment__box">
@@ -28,7 +38,7 @@ const Equipment = ({ equipment, onNewCount }) => {
         <img className='equipment__img' src={equipment.image} alt="" />
         <h1 className='equipment__count'
         >
-          {count}
+          {coldCount}
         </h1>
         <h2 className='equipment__name'>
           {equipment.id}

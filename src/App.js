@@ -8,9 +8,9 @@ import SaniCalc from "./Container/Sanicalc/SaniCalc";
 import SwipeBox from "./Container/UI/SwipeBox"
 
 function App() {
-  const [home, setHome] = useState(0)
+  const [home, setHome] = useState(1)
   const [air, setAir] = useState(0)
-  const [sani, setSani] = useState(1)
+  const [sani, setSani] = useState(0)
   const [heat, setHeat] = useState(0)
 
   const showHome = () => {
@@ -48,7 +48,8 @@ function App() {
       </h1>
       {home === 1 &&
         <div>
-          <div className="start__tiles">Větrání a klimatizace</div>
+          <div className="start__tiles" onClick={showAir}>Větrání a klimatizace</div>
+          {/* PŘEDPŘÍPRAVA DO BUDOUCNA
           <SwipeBox
             slot1="Dimenze VZT potrubí"
             props1OnClick={showAir}
@@ -67,12 +68,13 @@ function App() {
             image7={<img className='tile__img' src={""} alt="airDim" />}
             slot8="Hromadné garáže"
             image8={<img className='tile__img' src={""} alt="airDim" />}
-          />
+          /> */}
           <div className="start__tiles" onClick={showSani}>Zdravotně technické instalace</div>
-          <SwipeBox
+          {/* <SwipeBox
             slot1="Dimenze kanalizace"
             props1OnClick={showSani}
             image1={<img className='tile__img' src={""} alt="airDim" />}
+            PŘEDPŘÍPRAVA DO BUDOUCNA
             slot2="Dešťová voda"
             image2={<img className='tile__img' src={""} alt="airDim" />}
             slot3="Vodovodní potrubí"
@@ -81,13 +83,13 @@ function App() {
             image4={<img className='tile__img' src={""} alt="airDim" />}
             slot5="Tlakové ztráty vodovodu"
             image5={<img className='tile__img' src={""} alt="airDim" />}
-          />
+          /> */}
           <div className="start__tiles" onClick={showHeat}>Rozvody tepla a chladu</div>
-          <SwipeBox
+          {/* <SwipeBox
             slot1="Tepelné ztráty"
             props1OnClick={showHeat}
             image1={<img className='tile__img' src={""} alt="airDim" />}
-          />
+          /> */}
         </div>
       }
       {air === 1 && <AirCalc />}
